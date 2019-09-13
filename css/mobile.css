@@ -1,0 +1,41 @@
+/*Navbar*/
+
+#content-nav .links ul{
+    margin-right: 0;
+}
+
+#content-nav .name{
+    display: none;
+}
+
+/*Header*/
+
+.card{
+    width: 85%;
+    margin-top: 20%;
+}
+
+/*Projets*/
+
+#content-projects, .projet{
+    display: block;
+}
+
+.projet img{
+    margin: 20px auto;
+    width: 80%;
+}
+
+/*Compétences - Contact*/
+
+#cpt-contact{
+    display: block;
+}
+
+#cpt-bg{
+    padding-top: 5px;
+}
+
+#submit{
+    margin-bottom: 50px;
+}
