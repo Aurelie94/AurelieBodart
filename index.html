@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Aurélie Bodart - Web Développeuse Junior : à propos, projets, contact.">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="css/mobile.css">
+    <title>Aurélie Bodart | Web Développeuse Junior</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="content-nav">
+                <div class="name"><p><a href="#content-nav">Aurélie Bodart</a></p></div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#cpt-contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="bg-canevas">
+            <div id="bg-content">
+                <div class="card">
+                    <h1>Aurélie Bodart</h1>
+                    <h2>Web Développeuse Junior</h2>
+                    <a href="#about">Read More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Présentation</h2>
+            <p>Ayant récemment terminé une formation en web développement, je continue à apprendre chaque jour les langages de programmation. </p>
+            <p>J'aspire à trouver un travail dans le domaine du front-end autant que dans le domaine du back-end. J'ai aussi un bachelier en infographie et je me passionne également au montage vidéo.</p>
+        </section>
+        <section id="projects">
+            <h2>Projets</h2>
+            <div id="content-projects">
+                <div class="projet">
+                    <img src="/img/port-01.PNG" alt="Caryflore">
+                    <div class="projet-description">
+                        <h3>Caryflore - Site Dynamique</h3>
+                        <p>Le site Caryflore a été créé suite à la demande d'une cliente et a aussi été le projet de fin de formation. Il reprends les articles et nouveautés du magasin qui sont stockés dans une base de données ainsi que des informations pratiques et un formulaire de contact généré en php. Une interface admin a été créée pour la cliente.</p>
+                        <a href="https://caryflore.yo.fr/" target="_blank">Voir le site</a>
+                    </div>
+                </div>
+                <div class="projet">
+                    <img src="/img/port-02.PNG" alt="Discover Malta">
+                    <div class="projet-description">
+                        <h3>Discover Malta - Site Statique</h3>
+                        <p>Discover Malta est le premier site créé dans le cadre de ma formation afin de mettre en pratique mes compétences précédemment apprises en html, css et javascript.</p>
+                        <a href="#">Voir le site</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cpt-contact">
+            <div id="cpt-bg">
+                <div id="content-cpt">
+                    <h2>Compétences</h2>
+                    <div class="logos-cpt">
+                        <i class="fab fa-html5 fa-3x"></i>
+                        <i class="fab fa-css3-alt fa-3x"></i>
+                        <i class="fab fa-js-square fa-3x"></i>
+                        <!-- <i class="fab fa-bootstrap"></i> -->
+                        <img src="img/bootstrap-brands.png" alt="bootstrap-logo">
+                        <i class="fab fa-php fa-3x"></i>
+                    </div>
+                    <div class="autres-cpt">
+                        <ul>
+                            <li>Gestion de bases de données en mySQL</li>
+                            <li>Utilisation de la méthode Agile Scrum</li>
+                            <li>Utilisation des logiciels 3D : Cinema 4D - Unity</li>
+                            <li>Utilisation des logiciels de montage : Avid - Première Pro</li>
+                        </ul>
+        
+                    </div>
+                </div> 
+            </div>
+            <div id="contact">
+                <div id="content-contact">
+                    <h2>Contact</h2>
+                    <form action="#">
+                        <div>
+                            <label for="mail">Mail :</label><br>
+                            <input type="email" name="mail" id="mail" placeholder="contact@mail.com">
+                        </div>
+                        <div>
+                            <label for="message">Laisser votre message ici :</label><br>
+                            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        </div>
+                        <input type="submit" value="Envoyer" id="submit" disabled>
+                    </form>
+                    <p>Le site étant encore dans sa version statique, le formulaire de contact n'est pas encore actif. En attendant, vous pouvez me contacter via ce lien <a href="https://www.linkedin.com/in/aur%C3%A9lie-bodart-19505a190/">Linkedin</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="content-footer">
+            <p>&copy;Copyright Aurélie Bodart</p>
+            <p>Les icones utilisées proviennent de FontAwesome</p>
+        </div>
+    </footer>
+</body>
+</html>
