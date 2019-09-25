@@ -263,7 +263,12 @@ main p{
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
+
+/* #content-cpt .logos-cpt>*{
+    flex: 1 1 1;
+} */
 
 #content-cpt h2{
     color: #fff;
@@ -284,8 +289,12 @@ main p{
     color: #fff;
 }
 
-#content-cpt img{
+#logo-bootstrap{
     width: 40px;
+}
+
+#logo-jquery{
+    width: 80px;
 }
 
 /* #content-cpt ul{
