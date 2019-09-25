@@ -4,6 +4,10 @@
     margin-right: 0;
 }
 
+#content-nav .links ul li a{
+    font-size: 1rem;
+}
+
 #content-nav .name{
     display: none;
 }
@@ -13,6 +17,14 @@
 .card{
     width: 85%;
     margin-top: 20%;
+}
+
+.card h1{
+    font-size: 2.3rem;  
+}
+
+.card h2{
+    font-size: 1.8rem;
 }
 
 /*Projets*/
@@ -27,6 +39,20 @@
 }
 
 /*Compétences - Contact*/
+
+#content-cpt .logos-cpt i,
+#content-cpt .logos-cpt img
+{
+    padding: 5px 10px;
+}
+
+#logo-bootstrap{
+    width: 60px;
+}
+
+#logo-jquery{
+    width: 100px;
+}
 
 #cpt-contact{
     display: block;
