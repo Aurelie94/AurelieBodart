@@ -44,6 +44,9 @@ nav{
     background-color: var(--primary-color);
     color: #fff;
     padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
 }
 
@@ -90,6 +93,9 @@ header{
     z-index: 5;
     height: 100vh;
     opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card{
@@ -101,9 +107,8 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top:12%;
     z-index: 1;
-    padding: 50px 0;
+    padding: 65px 0;
 }
 
 .card h1{
@@ -200,6 +205,7 @@ main p{
 .projet img{
     flex:2;
     margin-right: 10%;
+    cursor: pointer;
 }
 
 .projet-description{
@@ -226,6 +232,56 @@ main p{
 
 .projet a:hover{
     background-color: var(--secondary-color);
+}
+
+
+/*Galerie JS*/
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3;
+    display: none;
+}
+
+.close:hover,
+.close:focus{
+    color:var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#img-temp img, #textTemp p{
+    width: 60%;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+}
+
+#img-temp img{
+    margin-top: 200px;
+}
+
+#text-temp p{
+    color:#fff;
+    margin-top: 40px;
+    text-align: center;
 }
 
 /*Compétences*/
