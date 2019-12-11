@@ -5,12 +5,64 @@
 }
 
 #content-nav .links ul li a{
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 #content-nav .name{
     display: none;
 }
+
+/*Bouton Nav*/
+
+    #content-nav{
+        display: inline-block;
+        width: 100%;
+    }
+
+    #content-nav .content_open{
+        padding-bottom: 0;
+    }
+
+    #content-nav .links ul{
+        display: block;
+        margin-top: 40px;
+    }
+
+    .nav{
+	    transition-duration:0.2s;
+	    height:110px;
+	}
+
+	.nav_open{
+		height:389px;
+		transition-duration:0.2s;
+        display:block;
+        padding: 0 0 0 0;
+        transition: 0.3;
+	}
+	
+	.nav li{
+		opacity:0;
+		display:none;
+	}
+	
+	.nav_open li{
+		opacity:1;
+		display:block;
+		padding:35px 0px 35px 0px;
+		border-bottom : 1px solid white;
+        margin:0 5px;
+        transition: 0.3;
+    }
+    
+	.nav_open li:first-child{
+		margin-top:10px;
+	}
+
+	.toggle-btn, .toggle-btn span, .toggle-btn span:after, .toggle-btn span:before{
+		opacity:1;
+		cursor:pointer;
+	}
 
 /*Header*/
 
@@ -24,8 +76,9 @@
 }
 
 .card h2{
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
+
 
 /*Projets*/
 

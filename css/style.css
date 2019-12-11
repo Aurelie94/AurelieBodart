@@ -34,20 +34,17 @@ img{
 
 nav{
     z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #content-nav{
     display:flex;
     align-items: center;
     justify-content: center;
-    
     background-color: var(--primary-color);
     color: #fff;
-    padding: 1.5rem 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
 }
 
 #content-nav .name{
@@ -85,6 +82,51 @@ nav{
     color: black;
 }
 
+/*Boutons Nav*/
+
+.toggle-btn{
+	height:35px;
+	width:30px;
+	position : relative;
+	float: right;
+    margin:1.5rem 1rem 1.5rem 0;
+}
+
+.toggle-btn span{
+	height:3px;
+	background-color:white;
+	width:100%;
+	position:absolute;
+	top:20px;
+	left:0;
+}
+
+
+.toggle-btn span:before{
+	content:"";
+	height:3px;
+	background-color:white;
+	width:100%;
+	position:absolute;
+	top:-10px;
+	left:0;
+}
+
+
+.toggle-btn span:after{
+	content:"";
+	height:3px;
+	background-color:white;
+	width:100%;
+	position:absolute;
+	top:10px;
+	left:0;
+}
+
+.toggle-btn, .toggle-btn span, .toggle-btn span:after, .toggle-btn span:before{
+	opacity:0;
+}
+
 /*Content header*/
 
 
@@ -93,9 +135,13 @@ header{
     z-index: 5;
     height: 100vh;
     opacity: 0.9;
+}
+
+#bg-canevas{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 90vh;
 }
 
 .card{
@@ -121,7 +167,7 @@ header{
 .card h2{
     font-weight: bold;
     color: var(--primary-color);
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -396,6 +442,12 @@ main p{
     font-weight: bold;
 }
 
+#mail + span{
+    font-size: 0.8rem;
+    padding-bottom: 8px;
+    display: block;
+}
+
 /*Footer*/
 
 footer{
@@ -406,10 +458,24 @@ footer{
     margin: 0 auto;
     width: 90%;
     padding: 40px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer p{
     font-size: 0.8rem;
     color: #fff;
     padding-bottom: 10px;
+}
+
+footer i{
+    color: #fff;
+    cursor: pointer;
+}
+
+footer i:hover{
+    color: var(--primary-color);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
 }
