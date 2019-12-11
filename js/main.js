@@ -1,3 +1,14 @@
+//Menu Burger --------------------------------------------------------------------------------
+
+let btn = document.querySelector(".toggle-btn");
+let nav = document.querySelector(".nav");
+let contentNav = document.querySelector("#content-nav");
+
+btn.addEventListener('click',function(){
+    nav.classList.toggle('nav_open');
+    contentNav.classList.toggle("content_open");
+});
+
 //Galerie JS ---------------------------------------------------------------------------------
 
 // Création du container
@@ -69,9 +80,46 @@ for(let i=0;i<pictQty;i++){
             }
 
         }
-    });
-
-    
-
-    
+    });    
 }
+
+// Vérification formulaire en JS ---------------------------------------------------------------------------------
+
+//Cibler l'input Mail
+
+let iptMail = document.querySelector("#mail");
+let divMail = iptMail.parentElement;
+
+//Création de la span mail 
+
+let spanMail = document.createElement("span");
+divMail.insertAdjacentElement("beforeend",spanMail);
+
+
+function controlMail(e){
+    
+    let mailClean = e.value.trim();
+    let regex = /^[a-z0-9\-_\.]+@[a-z0-9\-\.]+\.[a-z]{2,14}$/i;
+    spanMail.textContent = "";
+
+    if(iptMail.validity.valueMissing){
+        spanMail.textContent = "";
+    }
+
+    else if(regex.test(mailClean)){
+        spanMail.textContent = "Email Valide";
+        spanMail.style.color = "green";
+    }
+
+    else{
+        spanMail.textContent = "Veuillez entrer un email valide";
+        spanMail.style.color = "red";
+    }
+
+}
+
+iptMail.addEventListener("blur", function(){
+    controlMail(this);
+})
+
+//Effet apparition du texte
