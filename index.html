@@ -14,9 +14,12 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <div id="content-nav">
-                <div class="name"><p><a href="#content-nav">Aurélie Bodart</a></p></div>
+                <div class="toggle-btn">
+                    <span></span>  
+                </div>
+                <div class="name"><p><a href="#bg-canevas">Aurélie Bodart</a></p></div>
                 <div class="links">
                     <ul>
                         <li><a href="#about">Présentation</a></li>
@@ -105,11 +108,11 @@
                     <form action="#">
                         <div>
                             <label for="mail">Mail :</label><br>
-                            <input type="email" name="mail" id="mail" placeholder="contact@mail.com">
+                            <input type="email" name="mail" id="mail" placeholder="contact@mail.com" required>
                         </div>
                         <div>
                             <label for="message">Laisser votre message ici :</label><br>
-                            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                            <textarea name="message" id="message" cols="30" rows="5" required></textarea>
                         </div>
                         <div>
                             <input type="checkbox" id="condition" name="condition" value="oui" required>
@@ -124,9 +127,13 @@
     </main>
     <footer>
         <div id="content-footer">
-            <p>&copy;Copyright Aurélie Bodart</p>
-            <p>Les icones utilisées proviennent de FontAwesome</p>
+            <div>
+                <p>&copy;Copyright Aurélie Bodart</p>
+                <p>Les icones utilisées proviennent de FontAwesome</p>
+            </div>
+            <div><i class="fab fa-linkedin fa-2x"></i></div>
         </div>
+    </footer>
     </footer>
     <script src="js/main.js"></script>
 </body>
