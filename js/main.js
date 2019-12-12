@@ -72,12 +72,12 @@ for(let i=0;i<pictQty;i++){
 
             caneva.afficher();
 
-            span.onclick = function(){
+            viewer.addEventListener("click",function(){
                 viewer.classList.remove("overlay");
                 span.style.display = "none";
                 imgTemp.innerHTML = "";
                 textTemp.innerHTML = "";
-            }
+            });
 
         }
     });    
