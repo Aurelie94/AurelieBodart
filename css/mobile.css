@@ -68,15 +68,22 @@
 
 .card{
     width: 85%;
-    margin-top: 20%;
+    /* margin-top: 20%; */
 }
 
 .card h1{
-    font-size: 2.3rem;  
+    font-size: 2.5rem;  
 }
 
 .card h2{
-    font-size: 2.2rem;
+    font-size: 1.9rem;
+    margin-bottom: 0;
+}
+
+.card a{
+    margin: 9px 0px 20px 0;
+    display:block;
+    padding: 10px 100px;
 }
 
 

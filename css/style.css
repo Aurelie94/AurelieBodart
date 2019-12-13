@@ -34,7 +34,7 @@ img{
 
 nav{
     z-index: 1000;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
@@ -140,13 +140,14 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
 }
 
 .card{
-    background-color: #fff;
+    /* background-color: #fff; */
     opacity: 0.7;
-    width: 45%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -157,27 +158,34 @@ header{
 }
 
 .card h1{
-    font-weight: lighter;
-    font-size: 2.5rem;
+    font-weight: bold;
+    font-size: 4.5rem;
     padding-bottom: 5px;
     text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.5);
+    color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 .card h2{
     font-weight: bold;
-    color: var(--primary-color);
-    font-size: 2.4rem;
+    color: white;
+    font-size: 4.5rem;
     padding-bottom: 30px;
     text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.5);
+    margin-bottom: 33px;
+    font-family: 'Lato', sans-serif;
 }
 
 .card a{
     color: #fff;
     background-color: var(--primary-color);
-    padding: 8px 14px;
-    border-radius: 15px;
-}
-
+    padding: 18px 71px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin: 0px 20px;
+}   
 .card a:hover{
     background-color: var(--secondary-color);
 }
@@ -205,6 +213,14 @@ main p{
     line-height: 1.6;
 }
 
+#reseau01{
+    width: 50%;
+}
+
+#reseau02{
+    float: right;
+    width: 60%;
+}
 
 /*About*/
 
@@ -297,8 +313,8 @@ main p{
 .close{
     position: absolute;
     top: 15px;
-    right: 35px;
-    color: var(--primary-color);
+    right: 50px;
+    color: #fff;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -307,7 +323,7 @@ main p{
 
 .close:hover,
 .close:focus{
-    color:var(--secondary-color);
+    color:var(--primary-color);
     text-decoration: none;
     cursor: pointer;
 }
@@ -333,6 +349,7 @@ main p{
 
 #cpt-contact{
     display: flex;
+    clear: both;
 }
 
 #cpt-bg{
@@ -468,12 +485,13 @@ footer p{
     padding-bottom: 10px;
 }
 
-footer i{
+
+footer i, footer a{
     color: #fff;
     cursor: pointer;
 }
 
-footer i:hover{
+footer i:hover, footer a:hover{
     color: var(--primary-color);
     transition: ease-in-out;
     transition-duration: 0.3s;
